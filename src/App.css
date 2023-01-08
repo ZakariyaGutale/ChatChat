@@ -1,38 +1,204 @@
+body {
+  background-color: #ECE8DD;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-weight: 600;
+}
+
 .App {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.logo{
+  width: auto;
+  height: 100px;
+  padding-left: 10px;
+}
+.App header {
+  background-color: #E1D7C6;
+  height: 10vh;
+  min-height: 50px;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 99;
+  padding: 10px;
+  box-sizing: border-box;
+  box-shadow:
+    4.5px 4.5px 3.8px rgba(0, 0, 0, 0.024),
+    12.5px 12.5px 10.5px rgba(0, 0, 0, 0.035),
+    30.1px 30.1px 25.3px rgba(0, 0, 0, 0.046),
+    100px 100px 84px rgba(0, 0, 0, 0.07);
+
+}
+
+
+main {
+  padding: 10px;
+  height: 80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+main::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+main::-webkit-scrollbar-track {
+  background: #ECE8DD;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #23304e;
+}
+
+.chatbox {
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+form svg {
+  width: auto;
+  height: 30px;
+  align-items: center;
+}
+
+form button {
+  width: 8.54%;
+  background-color:#23304e;
+  border-radius: 0;
+}
+form button:hover{
+  background-color: #ECE8DD;
+}
+
+
+input {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  background-color: #111827;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0 10px;
+  width: 450px;
+}
+
+/* CSS */
+button {
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+button:hover {
+  background-color: #374151;
+}
+
+button:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: .75rem 1.5rem;
+  }
+}
+
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+.sign-in {
+  color: #282c34;
+  background: white;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+
+
+ul,
+li {
+  text-align: left;
+  list-style: none;
+}
+
+p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.message {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
   color: white;
+  background: #0081C9;
+  align-self: flex-end;
 }
 
-.App-link {
-  color: #61dafb;
+.received p {
+  background: #EAE0DA;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img {
+  width: auto;
+  height: 59px;
+  border-radius: 60%;
+  margin: 2px 5px;
 }
