@@ -36,6 +36,14 @@ body {
 
 }
 
+.App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: censter;
+  min-height: 100vh;
+  width: 632px;
+  
+}
 
 main {
   padding: 10px;
