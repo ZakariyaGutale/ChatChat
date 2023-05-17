@@ -7,12 +7,13 @@
   <li>Anonymous access 🔒</li>
 </ul>
 
+ChatChat: https://chatchat-e597a.web.app/
+
 ## Project Status 🏗️
 This project is currently in Alpha. 
 
 <h2>🏁 Getting Started</h2>
 Visit the Url or clone the repository
-# ChatChat: https://chatchat-e597a.web.app/
 <ol>
   <li>Clone the repository:
 <pre><code>git clone https://github.com/&lt;ZakariaNu&gt;/ChatChat.git
