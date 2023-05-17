@@ -6,7 +6,13 @@
   <li>Google authentication 🆔</li>
   <li>Anonymous access 🔒</li>
 </ul>
+
+## Project Status 🏗️
+This project is currently in Alpha. 
+
 <h2>🏁 Getting Started</h2>
+Visit the Url or clone the repository
+ChatChat: chatchat-e597a.web.app/
 <ol>
   <li>Clone the repository:
 <pre><code>git clone https://github.com/&lt;ZakariaNu&gt;/ChatChat.git
@@ -28,7 +34,3 @@ The app will be running at <a href="http://localhost:3000/">http://localhost:300
 <pre><code>npm run build
 </code></pre>
 <p>This will create a production-ready build in the <code>build</code> directory. You can then serve the static files using a hosting service such as Firebase Hosting or a service like NGINX.</p>
-<h2>🤝 Contributions</h2>
-<p>Contributions are welcome! If you have an idea for a new feature or have found a bug, please open an issue or submit a pull request. 💡</p>
-
-<h2>https://chatchat-e597a.web.app/</h2>
